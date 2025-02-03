@@ -37,4 +37,38 @@ INSERT INTO employee(fname,lname,age,salary,location) VALUES('kapil','sharma',28
 # command to drop a table
 DROP TABLE employee;
 
+# Ristrict NULL value in DEFAULT VALUE column
+# combination of NOT NULL and DEFAULT 
+- CREATE TABLE employee(
+fname VARCHAR(20) NOT NULL,
+mname VARCHAR(20),
+lname VARCHAR(20) NOT NULL,
+age INT NOT NULL,
+salary INT NOT NULL,
+location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
 
+### PRIMARY KEY--> uniquely identify each record in the table
+
+- CREATE TABLE employee(
+id int,
+fname VARCHAR(20) NOT NULL,
+mname VARCHAR(20),
+lname VARCHAR(20) NOT NULL,
+age int NOT NULL,
+salary int NOT NULL,
+location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
+
+- INSERT INTO employee(id, fname,lname,age,salary) VALUES(1,'kapil','sharma',28,10000);
+
+### Ristrict NULL value and duplicate value for primary key
+CREATE TABLE employee(
+id int PRIMARY KEY DEFAULT 1,
+fname VARCHAR(20) NOT NULL,
+mname VARCHAR(20),
+lname VARCHAR(20) NOT NULL,
+age int NOT NULL,
+salary int NOT NULL,
+location VARCHAR(20) NOT NULL DEFAULT 'bangalore'
+);
