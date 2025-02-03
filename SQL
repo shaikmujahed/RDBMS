@@ -1,3 +1,40 @@
-create database organization;
+# command to create database
+-create database organization;
+
+command to see list of databases
 show databases;
+
+# Ristrict NULL value
+-CREATE TABLE employee(
+fname VARCHAR(20) NOT NULL,
+mname VARCHAR(20),
+lname VARCHAR(20) NOT NULL,
+age INT NOT NULL,
+salary INT NOT NULL,
+location VARCHAR(20) NOT NULL
+);
+
+# To create DEFAULT VALUE
+- CREATE TABLE employee(
+fname VARCHAR(20) NOT NULL,
+mname VARCHAR(20),
+lname VARCHAR(20) NOT NULL,
+age INT NOT NULL,
+salary INT NOT NULL,
+location VARCHAR(20) DEFAULT 'bangalore'
+);
+
+# insert statement for default value
+- INSERT INTO employee(fname,lname,age,salary) VALUES('kapil','sharma',28,10000);
+- INSERT INTO employee(fname,lname,age,salary,location) VALUES('kapil','sharma',28,10000,'hyderabad');
+
+# To read records
+SELECT * FROM employee;
+
+# Over write default value with null value
+INSERT INTO employee(fname,lname,age,salary,location) VALUES('kapil','sharma',28,10000, NULL);
+
+# command to drop a table
+DROP TABLE employee;
+
 
