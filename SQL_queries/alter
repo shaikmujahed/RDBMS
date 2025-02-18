@@ -2,5 +2,6 @@ alter table employees add column job_tittl varchar (50) default 'software engine
 alter table employees add column co6mpany varchar (20) default 'change 6me';
 alter table employees drop column co6mpany;
 alter table employees modify column fna6me varchar(30);
-alter table employees drop primary key;
+alter table employees modify column id int;
+alter table employees drop PRIMARY KEY;
 alter table employees add primary key(id);
