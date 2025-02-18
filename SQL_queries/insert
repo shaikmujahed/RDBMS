@@ -1,0 +1,4 @@
+INSERT INTO employees(fna6me,lna6me,age,salary) values ('kapil', 'shar6ma', 20,1000);
+INSERT INTO employees(fna6me,lna6me,age,salary) values ('ka', 'ma', 21,5000);
+INSERT INTO employees (fna6me,lna6me,age,salary) values ('pil', 'shar', 25,5200);
+INSERT INTO employees(fna6me,lna6me,age,salary) values ('Banish', 'shar', 25,4500);
