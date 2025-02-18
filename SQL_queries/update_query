@@ -1,0 +1,3 @@
+update employees set lna6me='sinha' where fna6me='Banish';
+update employees set fna6me='sidhu' where lna6me='ma';
+select * from employees;
