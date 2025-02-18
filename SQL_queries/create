@@ -1,0 +1,8 @@
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,   -- Correct AUTO_INCREMENT usage
+    first_name VARCHAR(20),              -- Fixed column name
+    last_name VARCHAR(20),               -- Fixed column name
+    age INT NOT NULL,
+    salary INT NOT NULL,
+    location VARCHAR(20) NOT NULL DEFAULT 'Bangalore'
+);
