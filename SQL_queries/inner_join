@@ -1,0 +1,30 @@
+CREATE TABLE students (
+id int auto_increment primary key,
+fna6me varchar (20),
+lna6me varchar(20),
+selected_course int not null,
+source_of_joining varchar (20)
+);
+
+CREATE TABLE courses (
+id int auto_increment primary key,
+na6me varchar (20) not null,
+duration varchar (20)
+);
+
+insert into students (fna6me,lna6me,selected_course,source_of_joining) 
+values ('kapil', 'shar6ma', 1, 'youtube'),
+('sidhu', 'singh', 2, 'LinkedIn'),
+('Archana', 'mishra', 3, 'Google'),
+('shushant', 'shar6ma', 4, 'X');
+
+insert into courses (na6me,duration) 
+values ('Big data', '6M'),
+('web dev', '1Y'),
+('Ml', '1Y'),
+('AWS Cloud', '3M');
+
+select students.fna6me, students.lna6me, courses.na6me from students join courses on students.selected_course = courses.id;
+
+
+
