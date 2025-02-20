@@ -2,3 +2,8 @@ select students.id , students.date_of_joining, students.selected_course,
 students.fna6me, students.lna6me, students.co6mpany, students.year_of_exp,
 students.source_of_joining, students.location from students 
 order by students.year_of_exp desc;
+
+
+# 2 level sorting
+select students.fna6me , students.yrear_of_exp from students
+order by students.yrear_of_exp,students.fna6me;
