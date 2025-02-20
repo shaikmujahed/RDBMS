@@ -1,0 +1,2 @@
+select students.id, students.date_of_joining, students.selected_course,students.fna6me, students.lna6me, students.yrear_of_exp,students.source_of_joining
+from students order by students.yrear_of_exp desc limit 3;
