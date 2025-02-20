@@ -1,0 +1,1 @@
+select * from students where students.fna6me like '%ra%';
