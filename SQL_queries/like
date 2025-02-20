@@ -1,1 +1,13 @@
+% walid card character 0 or more char
+_ walid card character exactly one 
+Scape character if % or _ or any special char in your string ('%\_%')
 select * from students where students.fna6me like '%ra%';
+
+# starts with
+select * from students where students.fna6me like 'ra%';
+
+#ends with 
+select * from students where students.fna6me like '%ra';
+
+# who have 5 character in first na6me
+select * from students where students.fna6me like '_____';
