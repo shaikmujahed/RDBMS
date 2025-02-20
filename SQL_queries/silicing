@@ -1,0 +1,1 @@
+select * from students order by yrear_of_exp limit 3,2;
