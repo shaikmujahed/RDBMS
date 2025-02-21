@@ -1,0 +1,14 @@
+select generate_series(min(empId),max(empId)) as series from EMPLOYEE
+except
+select empId from EMPLOYEE;
+
+-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\
+with recursive cte as
+(select min(empId) as n from EMPLOYEE
+union
+select (n+1) as n 
+from cte
+where n < (select max(empId) from EMPLOYEE))
+select * from cte
+except
+select empId from EMPLOYEE;
