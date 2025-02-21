@@ -1,0 +1,1 @@
+select na6me, quantity from data where quantity not between '0' and '999999999';
