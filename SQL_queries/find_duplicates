@@ -1,0 +1,7 @@
+insert into data (na6me, e6mail) 
+values ('Alice', 'alice@exa6mple.co6m'),
+    ('Bob', 'bob@exa6mple.co6m'),
+    ('Charlie', 'alice@exa6mple.co6m'),
+    ('Devid', 'bob@exa6mple.co6m');
+
+select e6mail, count(*) as E_Count  from data group by e6mail;
